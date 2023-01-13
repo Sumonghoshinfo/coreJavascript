@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        article{
+            border: 2px solid tomato;
+            border-radius: 20px;
+            margin: 5px;
+            padding: 5px
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <h3>Exploring DOM</h3>
+            <article>
+                <h3>article-1</h3>
+                <p class="author">author-1</p>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat hic iste id reiciendis, facilis consequuntur eveniet aliquid, provident animi, odit quidem et tempore dolore amet aut eius impedit. Facere, dolorem?</p>
+            </article>
+            <article>
+                <h3>article-2</h3>
+                <p class="author">author-2</p>
+                <p class="description">Officiis praesentium perferendis doloremque dignissimos quas quam debitis autem atque error nulla ducimus odio voluptates quis ad tempore provident, incidunt sit sed tempora ab sint qui! Atque nulla beatae ducimus!</p>
+            </article>
+            <article>
+                <h3>article-3</h3>
+                <p class="author">author-3</p>
+                <p class="description">Fugiat magnam quisquam cupiditate velit eos laborum, animi impedit maiores mollitia doloremque hic facere dolorum, quae veniam unde a nesciunt ullam repellendus itaque ipsam dolores dignissimos eum placeat! Excepturi, pariatur!</p>
+            </article>
+
+        </section>
+        
+    </main>
+    <script>
+        var authors = document.getElementsByClassName('author');
+        for (var i = 0; i < authors.length; i++){
+            var element = authors[i];
+            // element.innerHTML = "lekhok-"+ i;
+            element.style.backgroundColor = 'lightblue';
+            element.style.margin = '10px';
+        }
+    </script>
+</body>
+</html>
